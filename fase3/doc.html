@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Test Documentation</title>
+        <style>
+            body {
+                text-rendering: optimizeLegibility;
+                font-variant-ligatures: common-ligatures;
+                font-kerning: normal;
+                margin-left: 2em;
+            }
+
+            body > ul > li {
+                font-family: Source Serif Pro, PT Sans, Trebuchet MS, Helvetica, Arial;
+                font-size: 2em;
+            }
+
+            h2 {
+                font-family: Tahoma, Helvetica, Arial;
+                font-size: 3em;
+            }
+
+            ul {
+                list-style: none;
+                margin-bottom: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 id="CuentaTest">Cuenta</h2>
+        <ul>
+            <li style="color: #555753;">✓ Al crear cuenta el saldo es cero</li>
+            <li style="color: #555753;">✓ Al ingresar 100 en cuenta vacia el saldo es 100</li>
+            <li style="color: #555753;">✓ Al ingresar 3000 en cuenta vacia el saldo es 3000</li>
+            <li style="color: #555753;">✓ Al ingresar 3000 en cuenta con 100 el saldo es 3100</li>
+            <li style="color: #555753;">✓ No se puede ingresar cantidad negativa</li>
+            <li style="color: #555753;">✓ Ingreso cantidad 2 decimales</li>
+            <li style="color: #555753;">✓ Ingreso cantidad mas de 2 decimales no es valido</li>
+            <li style="color: #555753;">✓ Ingreso maximo es de 6000</li>
+            <li style="color: #555753;">✓ Ingreso mas de 6000 no es valido</li>
+            <li style="color: #555753;">✓ Al retirar 100 en cuenta con 500 el saldo es 400</li>
+            <li style="color: #555753;">✓ Al retirar 200 en cuenta con 900 el saldo es 700</li>
+            <li style="color: #555753;">✓ Al retirar 200 en cuenta con 1200 el saldo es 1000 y al retirar otros 150 el saldo es 850</li>
+        </ul>
+    </body>
+</html>
