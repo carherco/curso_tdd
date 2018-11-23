@@ -1,4 +1,4 @@
-#¿Puedo aplicar TDD con un equipo que no sea experto?
+# ¿Puedo aplicar TDD con un equipo que no sea experto?
 
 Principiante
 

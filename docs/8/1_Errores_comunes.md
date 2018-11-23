@@ -1,4 +1,4 @@
-#Errores comunes en TDD
+# Errores comunes en TDD
 
 Empezar con TDD no es coser y cantar. A lo largo del proceso surgen muchas dudas y se cometen muchos errores.
 

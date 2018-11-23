@@ -2,40 +2,35 @@ Una aplicación monedero para el pago entre amigos. Cada usuario tendrá una cue
 La idea es que se puedan hacer trasnferencias a tus amigos directamente desde la app. 
 La aplicación permitirá al usuario ingresar dinero o retirarlo cuando quiera.
 
+Tras profundizar en cada funcionalidad con el cliente, resulta que tengo las siguientes especificaciones, mucho más detalladas:
 
-Tras profundizar en cada funcionalidad con el cliente, resulta que tengo las siguientes especificaciones, 
-mucho más detalladas:
+- Creación de cuentas:
+    - Las cuentas siempre se crean con saldo 0. Hay que hacer algún ingreso después si se quiere tener saldo.
 
-- Creación de cuentas. 
-    - Las cuentas siempre se crean con saldo 0. Hay que hacer algún ingreso después si se quiere tener saldo:
-        
-
-- Ingresos. 
+- Ingresos:
     - Suman la cantidad ingresada al saldo. 
     - No hay comisiones ni nada por el estilo.
-    - No se pueden hacer ingresos negativos
-    - Los ingresos admiten un máximo de 2 decimales de precisión
-    - La cantidad máxima que se puede ingresar es de 6000
+    - No se pueden hacer ingresos negativos.
+    - Los ingresos admiten un máximo de 2 decimales de precisión.
+    - La cantidad máxima que se puede ingresar es de 6000.
         
 
-- Retiradas.
+- Retiradas:
     - Restan la cantidad ingresada al saldo. 
-    - No se puede retirar una cantidad mayor a la del saldo disponible
+    - No se puede retirar una cantidad mayor a la del saldo disponible.
     - No hay comisiones ni nada por el estilo.
-    - No se pueden retirar cantidades negativas
-    - Las cantidades admiten un máximo de 2 decimales de precisión
-    - La cantidad máxima que se puede retirar es de 6000
+    - No se pueden retirar cantidades negativas.
+    - Las cantidades admiten un máximo de 2 decimales de precisión.
+    - La cantidad máxima que se puede retirar es de 6000.
 
 
-- Transferencias
-    - No se pueden transferir cantidades negativas 
-    - El límite cantidad transferida es de 3000:
+- Transferencias:
+    - No se pueden transferir cantidades negativas.
+    - El límite cantidad transferida es de 3000.
         
 
 Este es más o menos el nivel de detalle requerido en la metodología tradicional. Con esto ya
-se puede realizar un análisis y un diseño completos de la aplicación. Sin embargo el objetivo 
-de ATDD es conseguir ejemplos concretos, para transformarlos posteriormente en tests concretos
-cuando apliquemos TDD.
+se puede realizar un análisis y un diseño completos de la aplicación. Sin embargo el objetivo de ATDD es conseguir ejemplos concretos, para transformarlos posteriormente en tests concretos cuando apliquemos TDD.
 
 Así que le damos todavía una vuelta más de tuerca para definir los ejemplos con los que 
 validaremos las funcionalidades: (en negrita añado los ejemplos)
@@ -88,7 +83,4 @@ primera cuenta el saldo se quedará en 3500 y en la segunda se quedará en 50.**
         - **Al hacer una transferencia de 2000 desde una cuenta con 3500 a una con 50, y justo después otra de 1200, en la 
 primera cuenta el saldo se quedará en 1500 y en la segunda se quedará en 2050.**
 
-
-Y ahora sí, hemos acabado de capturar las especificaciones. Con esto ya podemos empezar a escribir tests y a programar siguiendo 
-el algoritmo TDD visto con anterioridad. Cada ejemplo marcado en negrita, se convertirá en un test que habrá que pasar posteriormente.
-
+Y ahora sí, hemos acabado de capturar las especificaciones. Con esto ya podemos empezar a escribir tests y a programar siguiendo el algoritmo TDD visto con anterioridad. Cada ejemplo marcado en negrita, se convertirá en un test que habrá que pasar posteriormente.

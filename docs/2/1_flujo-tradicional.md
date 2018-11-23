@@ -1,4 +1,4 @@
-#Flujo de trabajo tradicional:
+# Flujo de trabajo tradicional:
 
 El flujo de trabajo tradicional en el desarrollo de sofware es de sobra conocido por todos nostros:
 

@@ -27,12 +27,12 @@ Lo primero es verficar con el cliente qué debe hacer exactamente la aplicación
 
 Hemos vuelto a hacer ATDD y ya tenemos un ejemplo concreto para convertirlo en un test.
 
-TDD - Paso 1. Escribimos el test.
+TDD - Paso 1. Escribimos un test que falle.
 
 ``` [php]
 
     public function testIngresoMasDe6000NoEsValidoAlIngresar7000EnCuentaCon2350ElSaldoSeQuedaEn2350(){
-        Arrange
+        //Arrange
         $c = new Cuenta();
         $c->ingreso(2350);
         

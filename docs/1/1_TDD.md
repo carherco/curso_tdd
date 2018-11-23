@@ -1,4 +1,4 @@
-#¿Qué es TDD?
+# ¿Qué es TDD?
 
 TDD no es un lenguaje de programación, sino una **técnica de ingeniería de software** 
 cuyo propósito se centra en **tres objetivos básicos**:
@@ -26,7 +26,7 @@ haya que hacer un cambio o una ampliación. Con TDD, hasta el más novel de los 
 será capaz de hacer cambios en un código desconocido, con la absoluta **confianza** 
 de que no va a romper nada.
 
-##¿Y cómo se consigue esto? 
+## ¿Y cómo se consigue esto?
 
 Pues cambiando la mentalidad tradicional de desarrollo.
 

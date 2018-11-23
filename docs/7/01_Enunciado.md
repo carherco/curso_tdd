@@ -1,7 +1,6 @@
-#Ejercicio práctico: Enunciado
+# Ejercicio práctico: Enunciado
 
-Vamos a partir de una parte de las especificaciones obtenidas mediante ATDD en 
-los vídeos anteriores:
+Las lista de especificaciones en "formato" ATDD son las siguientes: 
 
 - Creación de cuentas. 
     - Las cuentas siempre se crean con saldo 0. Hay que hacer algún ingreso después si se quiere tener saldo:
@@ -47,24 +46,23 @@ primera cuenta el saldo se quedará en 400 y en la segunda se quedará en 150.**
 primera cuenta el saldo se quedará en 500 y en la segunda se quedará en 3050.**
         - **Al hacer una transferencia de 3000.01 desde una cuenta con 3500 a una con 50, en la 
 primera cuenta el saldo se quedará en 3500 y en la segunda se quedará en 50.**
+        - **Al hacer una transferencia de 2000 desde una cuenta con 3500 a una con 50, y justo después otra de 1200, en la 
+primera cuenta el saldo se quedará en 1500 y en la segunda se quedará en 2050.**
 
 
-
-Recordemos que estos ejemplos, 20 en total, se habían sacado a partir de apenas 1 párrafo de las especificaciones iniciales:
+Recordemos que estos ejemplos, 21 en total, se habían sacado a partir de apenas 1 párrafo de las especificaciones iniciales:
 
 *"Quiero lanzar una aplicación monedero para el pago entre amigos. Cada usuario tendrá una cuenta con saldo. 
 La idea es que se puedan hacer trasnferencias a tus amigos directamente desde la app. La aplicación permitirá 
 al usuario ingresar dinero o retirarlo cuando quiera."*
 
-Profundizando en la entrevista con el cliente, obtuvimos unas especificaciones 
-basadas en ejemplos concisos y concretos que:
+Profundizando en la entrevista con el cliente, obtuvimos unas especificaciones basadas en ejemplos concisos y concretos que:
 
 1. Evitarán que tengamos que tomar ninguna decisión sobre el modelo de negocio.
 2. Nos darán confianza plena para tomar todas las decisiones de diseño necesarias durante la elaboración de los tests.
 
 Además, permitirán también tanto al cliente como a nosotros mismos tener el mismo  
-listado de tests de aceptación. Si nuestra aplicación pasa esos 20 checkeos, tanto 
-nosotros como nuestro cliente daremos por buena la implementación de las 4 funcionalidades: 
+listado de tests de aceptación. Si nuestra aplicación pasa esos 20 checkeos, tanto nosotros como nuestro cliente daremos por buena la implementación de las 4 funcionalidades: 
 Creación de cuentas, ingresos, retiradas y transferencias.
 
 Pongámonos ya manos a la obra
