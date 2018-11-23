@@ -1,7 +1,7 @@
-#Cobertura de código
+# Cobertura de código
 > ../phpunit-5.7.phar test  --coverage-html ../cobertura --whitelist src/
 
-#Change Risk Anti-Patterns (CRAP) Index
+# Change Risk Anti-Patterns (CRAP) Index
 
 El índice CRAP se calcula en base a la complejidad ciclomática y a la cobertura de código. 
     
@@ -14,7 +14,7 @@ Un método con un índice CRAP de más de 30 se considera CRAPpy (es decir, inac
 http://gmetrics.sourceforge.net/gmetrics-CrapMetric.html
 
 
-#Los tests como parte de la documentación
+# Los tests como parte de la documentación
 
 > ../phpunit-5.7.phar test --testdox doc.html
 
